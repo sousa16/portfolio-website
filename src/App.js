@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { theme } from './utils/Theme';
+import { Container } from './styles/Global.styled';
+import { BrowserRouter } from 'react-router-dom';
 
-function App() {
+// import components
+import Navbar from './components/Navbar';
+import ParticleBg from './components/ParticleBg';
+import Showcase from './components/Showcase';
+import MySkills from './components/MySkills';
+import MyProjects from './components/MyProjects';
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <ParticleBg></ParticleBg>
+        <Navbar></Navbar>
+        <Container>
+            <Showcase id='showcase'/>
+            <MySkills id='skills'/>
+            <MyProjects id='projects'/>
+          </Container>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
-
-export default App;
