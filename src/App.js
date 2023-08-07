@@ -13,7 +13,7 @@ import MyProjects from './components/MyProjects';
 
 export default function App() {
   return (
-    <BrowserRouter {process.env.PUBLIC_URL}>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <ThemeProvider theme={theme}>
         <ParticleBg></ParticleBg>
         <Navbar></Navbar>
