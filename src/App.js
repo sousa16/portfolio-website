@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './utils/Theme';
 import { Container } from './styles/Global.styled';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 // import components
 import Navbar from './components/Navbar';
@@ -13,7 +13,7 @@ import MyProjects from './components/MyProjects';
 
 export default function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <ThemeProvider theme={theme}>
         <ParticleBg></ParticleBg>
         <Navbar></Navbar>
@@ -23,6 +23,6 @@ export default function App() {
             <MyProjects id='projects'/>
           </Container>
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
