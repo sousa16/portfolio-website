@@ -60,11 +60,6 @@ export const navLinks = [
         id: 2,
         name: 'My Projects',
         to: 'projects' 
-    },
-
-    {
-        id: 0,
-        name: 'Contact Me',
-        to: 'contact-me' 
     }
+
 ]
