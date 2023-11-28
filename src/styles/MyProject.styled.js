@@ -20,7 +20,7 @@ export const ProjectImageContainer = styled.div`
 
 // width at 80% for websites, don't specify for square logos
 export const ProjectImage = styled.img`
-    border: 1px solid #fff;
+    border: ${({ solidBorder }) => (solidBorder ? '1px solid #fff' : '1px solid transparent')};
     width: ${({ width }) => width};
     height: 300px;
     object-fit: contain;

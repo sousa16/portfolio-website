@@ -50,7 +50,9 @@ const Project = ({ data }) => {
                 {data.project_desc}
             </ParaText>
 
-            <Button>{data.button_text}</Button>
+            <a href={data.button_url}  target='_blank' rel="noreferrer">
+                <Button>{data.button_text}</Button>
+            </a>
         </div>
 
         {/* --right-section-project-content-- */}
@@ -58,6 +60,7 @@ const Project = ({ data }) => {
             <ProjectImage 
                 src={data.project_img} 
                 alt={data.project_name}
+                solidBorder={false}
             />
         </ProjectImageContainer>
     </FlexContainer>

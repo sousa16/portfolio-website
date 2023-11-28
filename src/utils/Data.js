@@ -3,7 +3,7 @@ import { FaReact, FaPython } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 
-import ComingSoon from '../assets/ComingSoon.png'
+import ChessLabPrev from '../assets/chesslabprev.png'
 
 export const Skills = [
     {
@@ -36,10 +36,11 @@ export const projectDetails = [
         This user-friendly mobile app provides a platform to create and edit your personalized opening repertoires, in addition to a multitude of puzzles of varying levels of difficulty. 
         By integrating the Spaced Repetition System (SRS), ChessLab ensures that your training adapts to your progress, maximizing memory retention and skill improvement.`,
         tech_stack: ['React Native', 'Python', 'Firebase'],
-        project_img: ComingSoon,
+        project_img: ChessLabPrev,
         project_url: 'https://github.com/MartimBaltazar/ChessLab',
         reverse: false,
-        button_text: 'Website Coming Soon...' // 'Visit Website' normally
+        button_text: 'Visit Website',
+        button_url: 'http://www.chesslab.pt'
     }
 ]
 
