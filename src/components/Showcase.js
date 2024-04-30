@@ -57,8 +57,8 @@ const Showcase = () => {
                 <ParaText as='p' top='2rem' bottom='4rem'>
                     Hello, my name is João Sousa and I'm a Computer Science student on my third year
                     at Instituto Superior Técnico. 
-                    I am mainly interested in creating websites and web applications, as well as
-                    mobile apps. I also have a genuine interest in cybersecurity.
+                    I am mainly interested in Cybersecurity (CTF Player @ <a href='https://sectt.github.io/' target='_blank' rel="noreferrer">STT</a>),
+                    but I also enjoy working on other projects, such as mobile apps, websites, and more.
                 </ParaText>
 
                 {/* --social-icons-- */}

@@ -60,9 +60,9 @@ const MySkills = () => {
                         </Heading>
 
                         <ParaText top='2rem' bottom='1.5rem'>
-                            As a Computer Science student, I'm working on improving my skills in ReactJS in order to create dynamic designs and interactive web experiences.
-                            My curiosity about Python encourages me to discover various programming techniques for a wide range of projects, keeping things interesting and adaptable.
-                            I'm also in the process of diving into cybersecurity, aiming to understand how to make the digital world safer.
+                            As a Computer Science student, I'm actively working on expanding my knowledge and skills in various areas of technology,
+                            such as Cybersecurity, Web Development, Mobile Development, and more. I love problem solving, hence why I really
+                            enjoy playing CTFs and embracing projects that challenge me in new ways. 
                         </ParaText>
 
                         <ParaText>
