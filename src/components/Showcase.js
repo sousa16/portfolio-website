@@ -35,7 +35,7 @@ const Showcase = () => {
         responsiveRight='1rem'
         responsiveTop='8rem'
     >
-        <FlexContainer align='left' fullWidthChild>
+        <FlexContainer fullWidthChild>
 
             {/* --left-content-- */}
             <div>
@@ -55,10 +55,12 @@ const Showcase = () => {
                 </Heading>
 
                 <ParaText as='p' top='2rem' bottom='4rem'>
-                    Hello, my name is João Sousa and I'm a Computer Science student on my third year
-                    at Instituto Superior Técnico. 
-                    I am mainly interested in Cybersecurity (CTF Player @ <a href='https://sectt.github.io/' target='_blank' rel="noreferrer">STT</a>),
-                    but I also enjoy working on other projects, such as mobile apps, websites, and more.
+                Hello, my name is João Sousa, and I'm a third-year Computer Science student at Instituto Superior Técnico.  
+                I have a strong interest in Cybersecurity and Computer Networks, 
+                but I also enjoy working on diverse projects, including mobile apps and websites.  
+                <br></br>
+                Currently, I am pursuing the CCNA certification to deepen my networking expertise.
+
                 </ParaText>
 
                 {/* --social-icons-- */}

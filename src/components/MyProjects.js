@@ -12,9 +12,8 @@ const MyProjects = () => {
   return (
     <PaddingContainer
         id='projects'
-        top='8%'
         bottom='5%'
-        responsiveTop='20%'
+        responsiveTop='6rem'
         responsiveLeft='1rem'
         responsiveRight='1rem'
     >

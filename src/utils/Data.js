@@ -32,17 +32,15 @@ export const projectDetails = [
     {
         id: 0,
         project_name: 'ChessLab',
-        project_desc: `ChessLab offers a comprehensive training experience that enables you to study and refine your openings, as well as sharpen your tactical prowess. 
-        This user-friendly mobile app provides a platform to create and edit your personalized opening repertoires, in addition to a multitude of puzzles of varying levels of difficulty. 
-        By integrating the Spaced Repetition System (SRS), ChessLab ensures that your training adapts to your progress, maximizing memory retention and skill improvement.`,
+        project_desc: `ChessLab was a mobile app I began developing to help chess players improve their openings and tactical skills through a personalized training experience.
+        The app aimed to allow users to create and edit opening repertoires and practice puzzles. Although the project isn't completed, it gave me valuable experience in mobile app development and sparked my interest in integrating advanced learning features like Spaced Repetition.`,
         tech_stack: ['React Native', 'Python', 'Firebase'],
         project_img: ChessLabPrev,
-        // project_url: '#',
         reverse: false,
-        button_text: 'Visit Website',
-        button_url: 'http://www.chesslab.pt'
+        // button_text: 'Visit Website',
+        // button_url: 'http://www.chesslab.pt'
     }
-]
+];
 
 export const navLinks = [
     {
@@ -59,6 +57,12 @@ export const navLinks = [
 
     {
         id: 2,
+        name: 'Work Experience',
+        to: 'experience'
+    },
+
+    {
+        id: 3,
         name: 'My Projects',
         to: 'projects' 
     }

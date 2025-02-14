@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import ParticleBg from './components/ParticleBg';
 import Showcase from './components/Showcase';
 import MySkills from './components/MySkills';
+import WorkExperience from './components/WorkExperience';
 import MyProjects from './components/MyProjects';
 
 export default function App() {
@@ -18,10 +19,11 @@ export default function App() {
         <ParticleBg></ParticleBg>
         <Navbar></Navbar>
         <Container>
-            <Showcase id='showcase'/>
-            <MySkills id='skills'/>
-            <MyProjects id='projects'/>
-          </Container>
+          <Showcase id="showcase" />
+          <MySkills id="skills" />
+          <WorkExperience id="experience" />
+          <MyProjects id="projects" />
+        </Container>
       </ThemeProvider>
     </HashRouter>
   );

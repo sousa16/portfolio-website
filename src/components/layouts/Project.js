@@ -47,21 +47,29 @@ const Project = ({ data }) => {
             </PaddingContainer>
 
             <ParaText top='1.5rem' bottom='2rem'>
-                {data.project_desc}
+                {data.project_desc.split('\n').map((line, index) => (
+                <span key={index}>
+                    {line}
+                    <br />
+                </span>
+                ))}
             </ParaText>
 
-            <a href={data.button_url}  target='_blank' rel="noreferrer">
+            {data.button_url && data.button_text && (
+            <a href={data.button_url} target="_blank" rel="noreferrer">
                 <Button>{data.button_text}</Button>
             </a>
+            )}
+
         </div>
 
         {/* --right-section-project-content-- */}
         <ProjectImageContainer justify='flex-end'>
-            <ProjectImage 
-                src={data.project_img} 
-                alt={data.project_name}
-                solidBorder={false}
-            />
+        <ProjectImage 
+            src={data.project_img} 
+            alt={data.project_name}
+            $solidBorder={false}
+        />
         </ProjectImageContainer>
     </FlexContainer>
   )

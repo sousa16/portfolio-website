@@ -23,7 +23,6 @@ const MySkills = () => {
     return (
         <PaddingContainer
         id='skills'
-        top='10%'
         bottom='10%'
         responsiveLeft='1rem'
         responsiveRight='1rem'
@@ -59,15 +58,15 @@ const MySkills = () => {
                             What <GreyText>I can do</GreyText>
                         </Heading>
 
-                        <ParaText top='2rem' bottom='1.5rem'>
-                            As a Computer Science student, I'm actively working on expanding my knowledge and skills in various areas of technology,
-                            such as Cybersecurity, Web Development, Mobile Development, and more. I love problem solving, hence why I really
-                            enjoy playing CTFs and embracing projects that challenge me in new ways. 
+                        <ParaText top="2rem" bottom="1.5rem">
+                            As a Computer Science student, I'm actively expanding my knowledge and skills in various areas of technology, 
+                            with a strong focus on Networking, Cybersecurity, and Web Development. I enjoy tackling complex problems 
+                            and working on projects that challenge me to learn and grow.
                         </ParaText>
 
                         <ParaText>
-                        I'm committed to always learning and growing, with the intention of keeping up with changes in technology and staying ahead.
-
+                            I'm committed to continuous learning and staying up to date with advancements in technology to refine my expertise 
+                            and stay ahead in the field.
                         </ParaText>
                 </div>            
             </FlexContainer>
