@@ -49,7 +49,7 @@ const WorkExperience = () => {
                         <Heading as="h3" size="h3">
                             Digital Business Engineer
                         </Heading>
-                        <GreyText>t_insight | Sep 2024 – Feb 2024</GreyText>
+                        <GreyText>t_insight | Sep 2024 – Feb 2025</GreyText>
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
