@@ -59,9 +59,10 @@ const MySkills = () => {
                         </Heading>
 
                         <ParaText top="2rem" bottom="1.5rem">
-                            As a Computer Science student, I'm actively expanding my knowledge and skills in various areas of technology, 
-                            with a strong focus on Networking, Cybersecurity, and Web Development. I enjoy tackling complex problems 
-                            and working on projects that challenge me to learn and grow.
+                            Having recently completed my Bachelor's, 
+                            I'm actively expanding my knowledge and skills in various areas of technology, 
+                            with a strong focus on Networking and Cybersecurity. 
+                            I enjoy tackling complex problems and working on projects that challenge me to learn and grow.
                         </ParaText>
 
                         <ParaText>

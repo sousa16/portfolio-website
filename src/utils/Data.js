@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaReact, FaPython } from 'react-icons/fa';
-import { SiJavascript } from 'react-icons/si';
+import { SiTypescript } from 'react-icons/si';
 import { AiOutlinePlusCircle } from 'react-icons/ai';
 
 import ChessLabPrev from '../assets/chesslabprev.png'
+import PlinkoPrev from '../assets/plinkoprev.png';
 
 export const Skills = [
     {
@@ -13,8 +14,8 @@ export const Skills = [
     },
     {
         id: 1, 
-        tech: 'JavaScript',
-        icon: <SiJavascript />
+        tech: 'Typescript',
+        icon: <SiTypescript />
     }, 
     {
         id: 2, 
@@ -39,7 +40,17 @@ export const projectDetails = [
         reverse: false,
         // button_text: 'Visit Website',
         // button_url: 'http://www.chesslab.pt'
-    }
+    },
+    {
+        id: 1,
+        project_name: 'Plinko',
+        project_desc: `Developed a mobile Plinko Progressive Web App for a consulting firm to support interactive prize giveaways at promotional events. The application features an administrative interface that allows event staff to manage available products and monitor prize distribution in real time throughout the event. This solution was tailored for use by the firm's end client and is adaptable for various event scenarios, providing both engaging user experiences and robust inventory tracking for organizers.`,
+        tech_stack: ['React', 'TypeScript', 'Cloudflare Solutions'],
+        project_img: PlinkoPrev,
+        reverse: false,
+        button_text: 'Visit Web App',
+        button_url: 'https://plinko-2ha.pages.dev/'
+    },
 ];
 
 export const navLinks = [

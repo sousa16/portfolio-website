@@ -55,12 +55,11 @@ const Showcase = () => {
                 </Heading>
 
                 <ParaText as='p' top='2rem' bottom='4rem'>
-                Hello, my name is João Sousa, and I'm a third-year Computer Science student at Instituto Superior Técnico.  
-                I have a strong interest in Cybersecurity and Computer Networks, 
-                but I also enjoy working on diverse projects, including mobile apps and websites.  
-                <br></br>
+                Hello, my name is João Sousa, and I've completed my Bachelor's in Computer Science at Instituto Superior Técnico.
+                I have a strong interest in Cybersecurity and Computer Networks,
+                but I also enjoy working on diverse projects, including mobile and web applications.
+                <br />
                 Currently, I am pursuing the CCNA certification to deepen my networking expertise.
-
                 </ParaText>
 
                 {/* --social-icons-- */}
