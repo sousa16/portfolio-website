@@ -51,11 +51,11 @@ const Showcase = () => {
                 </Heading>
 
                 <Heading as='h3' size='h3'>
-                    I'm a <GreyText>Computer Science Student</GreyText>
+                    I'm a <GreyText>Computer Science Graduate</GreyText>
                 </Heading>
 
                 <ParaText as='p' top='2rem' bottom='4rem'>
-                Hello, my name is João Sousa, and I've completed my Bachelor's in Computer Science at Instituto Superior Técnico.
+                Hello, my name is João Sousa, and I've completed my Bachelor's in Computer Science at Instituto Superior Técnico (2025).
                 I have a strong interest in Cybersecurity and Computer Networks,
                 but I also enjoy working on diverse projects, including mobile and web applications.
                 <br />

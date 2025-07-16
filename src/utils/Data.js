@@ -32,17 +32,26 @@ export const Skills = [
 export const projectDetails = [
     {
         id: 0,
+        project_name: 'CTF Writeup Repository',
+        project_desc: `This repository is a collection of writeups for various Capture The Flag (CTF) challenges I've solved - mainly in the web exploitation area. It serves as a personal reference and a resource for others looking to learn from my experiences in solving CTF challenges.`,
+        tech_stack: ['Web Exploitation', 'Python'],
+        project_img: null,
+        project_url: 'https://github.com/sousa16/ctf-writeups',
+        reverse: false,
+    },
+    {
+        id: 1,
         project_name: 'ChessLab',
         project_desc: `ChessLab was a mobile app I began developing to help chess players improve their openings and tactical skills through a personalized training experience.
         The app aimed to allow users to create and edit opening repertoires and practice puzzles. Although the project isn't completed, it gave me valuable experience in mobile app development and sparked my interest in integrating advanced learning features like Spaced Repetition.`,
         tech_stack: ['React Native', 'Python', 'Firebase'],
         project_img: ChessLabPrev,
         reverse: false,
-        // button_text: 'Visit Website',
-        // button_url: 'http://www.chesslab.pt'
+        //button_text: 'Visit Repository',
+        //button_url: 'http://www.chesslab.pt'
     },
     {
-        id: 1,
+        id: 2,
         project_name: 'Plinko',
         project_desc: `Developed a mobile Plinko Progressive Web App for a consulting firm to support interactive prize giveaways at promotional events. The application features an administrative interface that allows event staff to manage available products and monitor prize distribution in real time throughout the event. This solution was tailored for use by the firm's end client and is adaptable for various event scenarios, providing both engaging user experiences and robust inventory tracking for organizers.`,
         tech_stack: ['React', 'TypeScript', 'Cloudflare Solutions'],

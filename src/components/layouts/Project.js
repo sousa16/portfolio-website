@@ -25,7 +25,7 @@ const Project = ({ data }) => {
     <FlexContainer fullWidthChild>
 
         {/* --left-section-project-content-- */}
-        <div>
+        <div style={!data.project_img ? { flex: '0 1 70%' } : undefined}>
             <FlexContainer align='center' gap='1rem'>
                 <Heading as='h3' size='h3' bottom='1rem'>
                     {data.project_name}
@@ -64,13 +64,15 @@ const Project = ({ data }) => {
         </div>
 
         {/* --right-section-project-content-- */}
-        <ProjectImageContainer justify='flex-end'>
-        <ProjectImage 
-            src={data.project_img} 
+        {data.project_img && (
+        <ProjectImageContainer justify='flex-end' >
+            <ProjectImage 
+            src={data.project_img}
             alt={data.project_name}
             $solidBorder={false}
-        />
+            />
         </ProjectImageContainer>
+        )}
     </FlexContainer>
   )
 }
