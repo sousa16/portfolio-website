@@ -33,7 +33,7 @@ export const projectDetails = [
     {
         id: 0,
         project_name: 'CTF Writeup Repository',
-        project_desc: `This repository is a collection of writeups for various Capture The Flag (CTF) challenges I've solved - mainly in the web exploitation area. It serves as a personal reference and a resource for others looking to learn from my experiences in solving CTF challenges.`,
+        project_desc: `This repository is a growing collection of writeups for various Capture The Flag (CTF) challenges I've solved - mainly in the web exploitation area. It serves as a personal reference and a resource for others looking to learn from my experiences in solving CTF challenges.`,
         tech_stack: ['Web Exploitation', 'Python'],
         project_img: null,
         project_url: 'https://github.com/sousa16/ctf-writeups',

@@ -31,11 +31,13 @@ const Project = ({ data }) => {
                     {data.project_name}
                 </Heading>
 
+                {data.project_url &&
                 <a href={data.project_url} target='_blank' rel="noreferrer">
                     <IconContainer color='grey' size='2rem'>
                         <FaGithub />
                     </IconContainer>
                 </a>
+                }
             </FlexContainer>
 
             <PaddingContainer top='1rem'>
