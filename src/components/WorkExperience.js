@@ -27,7 +27,7 @@ const WorkExperience = () => {
                 Work Experience
             </Heading>
 
-            <FlexContainer justify="space-between" wrap="wrap">
+            <FlexContainer justify="space-evenly" wrap="wrap">
                 {/* Work Experience Cards */}
                 <ExperienceCard>
                     <ExperienceCardHeader>
@@ -58,6 +58,23 @@ const WorkExperience = () => {
                     </ExperienceCardContent>
                 </ExperienceCard>
 
+                <ExperienceCard>
+                    <ExperienceCardHeader>
+                        <Heading as="h3" size="h3">
+                            Technical Intern
+                        </Heading>
+                        <GreyText>Cisco | Starting Sep 2025</GreyText>
+                    </ExperienceCardHeader>
+                    {/* 
+                    <ExperienceCardContent>
+                        <ParaText>
+                            Learning enterprise networking and automation.
+                        </ParaText>
+                    </ExperienceCardContent> 
+                    */}
+                    
+                </ExperienceCard>
+                
             </FlexContainer>
         </PaddingContainer>
     );
