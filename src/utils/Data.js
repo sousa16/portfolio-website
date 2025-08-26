@@ -1,7 +1,8 @@
 import React from 'react';
-import { FaReact, FaPython } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
+import { FaPython } from 'react-icons/fa';
+import { IoFlagSharp } from "react-icons/io5";
 import { AiOutlinePlusCircle } from 'react-icons/ai';
+import { SiCisco } from "react-icons/si";
 
 import ChessLabPrev from '../assets/chesslabprev.png'
 import PlinkoPrev from '../assets/plinkoprev.png';
@@ -9,18 +10,18 @@ import PlinkoPrev from '../assets/plinkoprev.png';
 export const Skills = [
     {
         id: 0, 
-        tech: 'React JS',
-        icon: <FaReact />
+        tech: 'Cisco Networking',
+        icon: <SiCisco />
     },
     {
         id: 1, 
-        tech: 'Typescript',
-        icon: <SiTypescript />
+        tech: 'Python',
+        icon: <FaPython />
     }, 
     {
         id: 2, 
-        tech: 'Python',
-        icon: <FaPython />
+        tech: 'Capture The Flag',
+        icon: <IoFlagSharp />
     }, 
     {
         id: 3, 

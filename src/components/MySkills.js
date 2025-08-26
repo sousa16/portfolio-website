@@ -59,15 +59,15 @@ const MySkills = () => {
                         </Heading>
 
                         <ParaText top="2rem" bottom="1.5rem">
-                            Having recently completed my Bachelor's, 
-                            I'm actively expanding my knowledge and skills in various areas of technology, 
-                            with a strong focus on Networking and Cybersecurity. 
-                            I enjoy tackling complex problems and working on projects that challenge me to learn and grow.
+                            I am a Computer Science graduate with hands-on experience in networking and cybersecurity. 
+                            I enjoy tackling complex technical challenges, from configuring networks and troubleshooting systems 
+                            to exploring vulnerabilities in Capture The Flag (CTF) competitions. 
+                            My work combines practical problem-solving with continuous learning.
                         </ParaText>
 
                         <ParaText>
-                            I'm committed to continuous learning and staying up to date with advancements in technology to refine my expertise 
-                            and stay ahead in the field.
+                            I’m committed to expanding my skills in areas like network administration, security analysis, and Python automation, 
+                            staying up to date with the latest technologies and best practices in the field.
                         </ParaText>
                 </div>            
             </FlexContainer>
