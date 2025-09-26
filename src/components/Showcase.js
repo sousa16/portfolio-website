@@ -59,7 +59,7 @@ const Showcase = () => {
                 Computer Science at Instituto Superior Técnico (2025), and 
                 I'm passionate about cybersecurity and computer networks.
                 <br />
-                Currently, I am pursuing the CCNA certification to deepen my networking expertise.
+                Currently, I am pursuing the CCNA and DevNet Associate certifications to deepen my networking expertise.
                 </ParaText>
 
                 {/* --social-icons-- */}
