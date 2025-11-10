@@ -61,14 +61,13 @@ const WorkExperience = () => {
                 <ExperienceCard>
                     <ExperienceCardHeader>
                         <Heading as="h3" size="h3">
-                            Technical Intern
+                            Technical Intern - TAC DCSV
                         </Heading>
                         <GreyText>Cisco | Sep 2025 - Present</GreyText>
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Internship at Cisco TAC, with planned exposure to enterprise networking, 
-                            routing and switching, and network security best practices.  
+                            Starting role supporting case workflows in data center virtualization environments.
                         </ParaText>
                     </ExperienceCardContent> 
                 </ExperienceCard>
