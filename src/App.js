@@ -9,6 +9,7 @@ import Navbar from './components/Navbar';
 import ParticleBg from './components/ParticleBg';
 import Showcase from './components/Showcase';
 import MySkills from './components/MySkills';
+import Certifications from './components/Certifications';
 import WorkExperience from './components/WorkExperience';
 import MyProjects from './components/MyProjects';
 
@@ -21,6 +22,7 @@ export default function App() {
         <Container>
           <Showcase id="showcase" />
           <MySkills id="skills" />
+          <Certifications id="certifications" />
           <WorkExperience id="experience" />
           <MyProjects id="projects" />
         </Container>
