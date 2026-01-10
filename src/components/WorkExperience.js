@@ -67,7 +67,7 @@ const WorkExperience = () => {
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Starting role supporting case workflows in data center virtualization environments.
+                            Supporting case workflows in data center virtualization environments.
                         </ParaText>
                     </ExperienceCardContent> 
                 </ExperienceCard>

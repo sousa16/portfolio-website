@@ -43,9 +43,8 @@ export const projectDetails = [
     {
         id: 1,
         project_name: 'ChessLab',
-        project_desc: `ChessLab was a mobile app I began developing to help chess players improve their openings and tactical skills through a personalized training experience.
-        The app aimed to allow users to create and edit opening repertoires and practice puzzles. Although the project isn't completed, it gave me valuable experience in mobile app development and sparked my interest in integrating advanced learning features like Spaced Repetition.`,
-        tech_stack: ['React Native', 'Python', 'Firebase'],
+        project_desc: `ChessLab is an in-progress project that helps chess players improve their opening repertoire through Spaced Repetition System (SRS) training.`,
+        tech_stack: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Neon', 'Prisma'],
         project_img: ChessLabPrev,
         reverse: false,
         //button_text: 'Visit Repository',
