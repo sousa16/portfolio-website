@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom';
 
 // import global styles
 import {
@@ -20,8 +21,25 @@ import { theme } from '../utils/Theme';
 import NavMenu  from '../components/layouts/NavMenu';
 import NavRightContainer from './layouts/NavRightContainer';
 
+const scrollWithOffset = (el) => {
+  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+  const yOffset = -100; 
+  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+};
+
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const handleLogoClick = () => {
+        if (location.pathname !== '/') {
+            navigate('/');
+        } else {
+            // If already on home, scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    };
 
     return (
         <NavbarContainer bgColor={theme.colors.primary}>
@@ -35,7 +53,7 @@ const Navbar = () => {
                     <FlexContainer justify='space-between' responsiveFlex>
 
                         {/* --left-logo-- */}
-                        <Logo>
+                        <Logo onClick={handleLogoClick} style={{ cursor: 'pointer' }}>
                             João<GreyText>Sousa</GreyText>
                         </Logo>
 

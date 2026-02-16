@@ -20,6 +20,8 @@ export const SkillsCard = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     background-color: ${({ theme }) => theme.colors.primary_light};
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {

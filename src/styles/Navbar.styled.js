@@ -49,6 +49,23 @@ export const NavButton = styled(Link)`
 }
 `
 
+export const NavButtonStyled = styled.button`
+    font-size: 1.2rem;
+    font-weight: ${({ theme }) => theme.fonts.weight.medium};
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-family: inherit;
+    transition: all 0.2s ease;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        display: none;
+    }
+`
+
 export const NavMenuContainer = styled.div`
     position: fixed;
     top: 0;
@@ -66,4 +83,17 @@ export const MenuItem = styled(Link)`
     cursor: pointer;
     text-decoration: none;
     to: ${({ to }) => to};
+`
+
+export const MenuItemStyled = styled.button`
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    text-decoration: none;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    font-weight: inherit;
 `

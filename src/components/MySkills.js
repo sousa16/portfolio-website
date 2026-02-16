@@ -55,19 +55,18 @@ const MySkills = () => {
                         </Heading>
 
                         <Heading as='h2' size='h2' top='0.5rem'>
-                            What <GreyText>I can do</GreyText>
+                            Technical <GreyText>Expertise</GreyText>
                         </Heading>
 
                         <ParaText top="2rem" bottom="1.5rem">
-                            I am a Computer Science graduate with hands-on experience in networking and cybersecurity. 
-                            I enjoy tackling complex technical challenges, from configuring networks and troubleshooting systems 
-                            to exploring vulnerabilities in Capture The Flag (CTF) competitions. 
-                            My work combines practical problem-solving with continuous learning.
+                            I specialize in network engineering, cybersecurity, and automation. My expertise spans Cisco technologies, 
+                            network architecture design, and hands-on security research through CTF competitions. I'm proficient in Python 
+                            for both scripting and automation tasks, enabling infrastructure-as-code practices and network automation.
                         </ParaText>
 
                         <ParaText>
-                            I’m committed to expanding my skills in areas like network administration, security analysis, and Python automation, 
-                            staying up to date with the latest technologies and best practices in the field.
+                            I combine theoretical knowledge with practical problem-solving, continuously expanding my capabilities in 
+                            emerging technologies and best practices in networking and security.
                         </ParaText>
                 </div>            
             </FlexContainer>

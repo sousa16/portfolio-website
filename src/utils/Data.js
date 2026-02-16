@@ -1,29 +1,29 @@
 import React from 'react';
 import { FaPython } from 'react-icons/fa';
 import { IoFlagSharp } from "react-icons/io5";
-import { AiOutlinePlusCircle } from 'react-icons/ai';
-import { SiCisco } from "react-icons/si";
+import { MdCloud } from "react-icons/md";
+import { MdSmartToy } from "react-icons/md";
 
 export const Skills = [
     {
         id: 0, 
-        tech: 'Cisco Networking',
-        icon: <SiCisco />
+        tech: 'Network & Data Center Engineering',
+        icon: <MdCloud />
     },
     {
         id: 1, 
-        tech: 'Python',
+        tech: 'Python Scripting & Automation',
         icon: <FaPython />
-    }, 
+    },
     {
         id: 2, 
-        tech: 'Capture The Flag',
+        tech: 'Cybersecurity & CTF',
         icon: <IoFlagSharp />
     }, 
     {
         id: 3, 
-        tech: 'And More...',
-        icon: <AiOutlinePlusCircle />
+        tech: 'AI Infrastructure & Tools',
+        icon: <MdSmartToy />
     },
 ];
 
@@ -60,29 +60,86 @@ export const projectDetails = [
     },
 ];
 
+export const blogPosts = [
+    {
+        id: 1,
+        slug: 'coming-soon',
+        title: 'News Coming Soon',
+        date: '2026-02-16',
+        excerpt: 'Check back soon for new posts.',
+        tags: ['Updates'],
+        content: (
+            <>
+                <h2>Coming Soon</h2>
+                <p>Stay tuned for new posts and updates. Check back soon!</p>
+            </>
+        )
+    },
+    // {
+    //     id: 2,
+    //     title: 'Lab Setup & Initial Hardware Configuration',
+    //     date: '2026-02-16',
+    //     excerpt: 'Documenting the journey of setting up the new lab environment, from hardware selection to initial configuration and networking setup.',
+    //     tags: ['Lab', 'Networking', 'Hardware'],
+    //     content: (
+    //         <>
+    //             <h2>Getting Started</h2>
+    //             <p>This is the beginning of an exciting journey. In this post, I'll document the initial setup and planning phases of the lab project.</p>
+    //             
+    //             <h3>Hardware Selection</h3>
+    //             <p>The first step was carefully selecting the right hardware components for the lab. Considerations included:</p>
+    //             <ul>
+    //                 <li>Performance requirements</li>
+    //                 <li>Power consumption</li>
+    //                 <li>Network capabilities</li>
+    //                 <li>Scalability for future expansion</li>
+    //             </ul>
+    //             
+    //             <h3>Initial Configuration</h3>
+    //             <p>Once hardware was in place, the configuration began. This involved setting up networking, installing base operating systems, and configuring initial services.</p>
+    //             
+    //             <p>Stay tuned for more detailed breakdowns of each component!</p>
+    //         </>
+    //     )
+    // },
+];
+
 export const navLinks = [
     {
         id: 0,
-        name: 'Home',
-        to: 'home' 
-    },
-
-    {
-        id: 1,
-        name: 'My Skills',
-        to: 'skills' 
-    },
-
-    {
-        id: 2,
         name: 'Work Experience',
         to: 'experience'
     },
 
     {
-        id: 3,
+        id: 1,
         name: 'My Projects',
         to: 'projects' 
+    },
+
+    {
+        id: 2,
+        name: 'My Skills',
+        to: 'skills' 
+    },
+
+    {
+        id: 3,
+        name: 'Certifications',
+        to: 'certifications'
+    },
+
+    {
+        id: 4,
+        name: 'Education',
+        to: 'education'
+    },
+
+    {
+        id: 5,
+        name: 'Blog',
+        to: 'blog',
+        isRoute: true
     }
 
 ]

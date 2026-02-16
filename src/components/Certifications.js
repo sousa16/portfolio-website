@@ -19,7 +19,7 @@ import {
 const Certifications = () => {
     return (
         <PaddingContainer
-            id="experience"
+            id="certifications"
             bottom="10%"
             responsiveTop="6rem"
         >
@@ -29,20 +29,6 @@ const Certifications = () => {
 
             <FlexContainer justify="space-evenly" wrap="wrap">
                 {/* Certification Cards */}
-                <CertificationCard>
-                    <CertificationCardHeader>
-                        <Heading as="h3" size="h3">
-                            Cisco Certified Network Associate (CCNA)
-                        </Heading>
-                        <GreyText>November 2025</GreyText>
-                    </CertificationCardHeader>
-                    <CertificationCardContent>
-                        <ParaText>
-                            Validated skills in network fundamentals, IP connectivity, security fundamentals, and automation.
-                        </ParaText>
-                    </CertificationCardContent>
-                </CertificationCard>
-
                 <CertificationCard>
                     <CertificationCardHeader>
                         <Heading as="h3" size="h3">
@@ -67,6 +53,20 @@ const Certifications = () => {
                     <CertificationCardContent>
                         <ParaText>
                             Validated skills in network automation, scripting, API development, and infrastructure-as-code practices for modern network management.
+                        </ParaText>
+                    </CertificationCardContent>
+                </CertificationCard>
+
+                <CertificationCard>
+                    <CertificationCardHeader>
+                        <Heading as="h3" size="h3">
+                            Cisco Certified Network Associate (CCNA)
+                        </Heading>
+                        <GreyText>November 2025</GreyText>
+                    </CertificationCardHeader>
+                    <CertificationCardContent>
+                        <ParaText>
+                            Validated skills in network fundamentals, IP connectivity, security fundamentals, and automation.
                         </ParaText>
                     </CertificationCardContent>
                 </CertificationCard>

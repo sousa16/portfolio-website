@@ -32,15 +32,15 @@ const WorkExperience = () => {
                 <ExperienceCard>
                     <ExperienceCardHeader>
                         <Heading as="h3" size="h3">
-                            Apprentice QA Automation Engineer
+                            Technical Intern - TAC DCSV
                         </Heading>
-                        <GreyText>Sky Portugal | Jul 2024 – Aug 2024</GreyText>
+                        <GreyText>Cisco | Sep 2025 - Present</GreyText>
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Developed a Retrieval Augmented Generation (RAG) powered Slack bot to automate bug ticket triage and routing in Jira. Built Python integration with Jira and Azure OpenAI to enable intelligent ticket classification and team-based distribution. Project demonstrates advanced AI application for workflow automation and operational efficiency improvements.
+                            Providing technical support for Cisco Unified Computing System (UCS) technologies as part of the Server Virtualization TAC team. Supporting complex customer environments with UCS B, C, and X series servers, UCS Central, and Intersight. Troubleshooting virtualized infrastructure issues across VMware, Hyper-V, and other hypervisor platforms to resolve customer technical challenges.
                         </ParaText>
-                    </ExperienceCardContent>
+                    </ExperienceCardContent> 
                 </ExperienceCard>
 
                 <ExperienceCard>
@@ -48,7 +48,7 @@ const WorkExperience = () => {
                         <Heading as="h3" size="h3">
                             Digital Business Engineer
                         </Heading>
-                        <GreyText>t_insight | Sep 2024 – Feb 2025</GreyText>
+                        <GreyText>t_insight | Sep 2024 – Feb 2025 (During Bachelor's)</GreyText>
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
@@ -60,15 +60,15 @@ const WorkExperience = () => {
                 <ExperienceCard>
                     <ExperienceCardHeader>
                         <Heading as="h3" size="h3">
-                            Technical Intern - TAC DCSV
+                            Apprentice QA Automation Engineer
                         </Heading>
-                        <GreyText>Cisco | Sep 2025 - Present</GreyText>
+                        <GreyText>Sky Portugal | Jul 2024 – Aug 2024 (Summer Internship)</GreyText>
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Providing technical support for Cisco Unified Computing System (UCS) technologies as part of the Server Virtualization TAC team. Supporting complex customer environments with UCS B, C, and X series servers, UCS Central, and Intersight. Troubleshooting virtualized infrastructure issues across VMware, Hyper-V, and other hypervisor platforms to resolve customer technical challenges.
+                            Developed a Retrieval Augmented Generation (RAG) powered Slack bot to automate bug ticket triage and routing in Jira. Built Python integration with Jira and Azure OpenAI to enable intelligent ticket classification and team-based distribution. Project demonstrates advanced AI application for workflow automation and operational efficiency improvements.
                         </ParaText>
-                    </ExperienceCardContent> 
+                    </ExperienceCardContent>
                 </ExperienceCard>
                 
             </FlexContainer>
