@@ -1,135 +1,18 @@
 import React from 'react';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
+import styled from 'styled-components';
+
+const GradientBg = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #2a2a2a 100%);
+    z-index: -1;
+`;
 
 const ParticleBg = () => {
-    async function loadParticles(main) {
-        await loadFull(main)
-    }
-  return (
-    <Particles 
-    id='tsparticles'
-    init={loadParticles}
-    options={
-        {
-            fullScreen: {
-                zIndex: -1,
-            },
-            background: {
-                color: '#222222',
-                image: '',
-                position: '50% 50%',
-                repeat: 'no-repeat',
-                size:'cover'
-            },
-            particles: {
-              number: {
-                value: 400,
-                density: {
-                  enable: true,
-                  value_area: 400
-                }
-              },
-              color: {
-                value: '#ffffff'
-              },
-              shape: {
-                type: 'triangle',
-                stroke: {
-                  width: 0,
-                  color: '#000000'
-                },
-                polygon: {
-                  nb_sides: 5
-                },
-                image: {
-                  src: 'img/github.svg',
-                  width: 100,
-                  height: 100
-                }
-              },
-              opacity: {
-                value: 1,
-                random: true,
-                anim: {
-                  enable: true,
-                  speed: 1,
-                  opacity_min: 0,
-                  sync: false
-                }
-              },
-              size: {
-                value: 3,
-                random: true,
-                anim: {
-                  enable: false,
-                  speed: 4,
-                  size_min: 0.3,
-                  sync: false
-                }
-              },
-              line_linked: {
-                enable: false,
-                distance: 150,
-                color: '#ffffff',
-                opacity: 0.4,
-                width: 1
-              },
-              move: {
-                enable: true,
-                speed: 1,
-                direction: 'none',
-                random: true,
-                straight: false,
-                out_mode: 'out',
-                bounce: false,
-                attract: {
-                  enable: false,
-                  rotateX: 600,
-                  rotateY: 600
-                }
-              }
-            },
-            interactivity: {
-              detect_on: 'window',
-              events: {
-                onhover: {
-                  enable: true,
-                  mode: 'bubble'
-                },
-                resize: true
-              },
-              modes: {
-                grab: {
-                  distance: 130,
-                  line_linked: {
-                    opacity: 1
-                  }
-                },
-                bubble: {
-                  distance: 100,
-                  size: 0,
-                  duration: 2,
-                  opacity: 0,
-                  speed: 3
-                },
-                repulse: {
-                  distance: 250,
-                  duration: 0.4
-                },
-                push: {
-                  particles_nb: 4
-                },
-                remove: {
-                  particles_nb: 2
-                }
-              }
-            },
-            retina_detect: true
-          }
-    }
-    />
-  )
-}
+  return <GradientBg />;
+};
 
-export default ParticleBg
+export default ParticleBg;

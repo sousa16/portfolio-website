@@ -12,9 +12,7 @@ import {
 
 // import project styles
 import {
-    ProjectImage,
     TechStackCard,
-    ProjectImageContainer,
 } from '../../styles/MyProject.styled';
 
 // import assets
@@ -25,7 +23,7 @@ const Project = ({ data }) => {
     <FlexContainer fullWidthChild>
 
         {/* --left-section-project-content-- */}
-        <div style={!data.project_img ? { flex: '0 1 70%' } : undefined}>
+        <div style={{ flex: '1 1 100%' }}>
             <FlexContainer align='center' gap='1rem'>
                 <Heading as='h3' size='h3' bottom='1rem'>
                     {data.project_name}
@@ -65,16 +63,6 @@ const Project = ({ data }) => {
 
         </div>
 
-        {/* --right-section-project-content-- */}
-        {data.project_img && (
-        <ProjectImageContainer justify='flex-end' >
-            <ProjectImage 
-            src={data.project_img}
-            alt={data.project_name}
-            $solidBorder={false}
-            />
-        </ProjectImageContainer>
-        )}
     </FlexContainer>
   )
 }

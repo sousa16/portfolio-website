@@ -38,8 +38,7 @@ const WorkExperience = () => {
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Enhanced Jira bug triage using GenAI to automate workflows.
-                            Developed Python scripts to integrate with Jira and Azure OpenAI.
+                            Developed a Retrieval Augmented Generation (RAG) powered Slack bot to automate bug ticket triage and routing in Jira. Built Python integration with Jira and Azure OpenAI to enable intelligent ticket classification and team-based distribution. Project demonstrates advanced AI application for workflow automation and operational efficiency improvements.
                         </ParaText>
                     </ExperienceCardContent>
                 </ExperienceCard>
@@ -53,7 +52,7 @@ const WorkExperience = () => {
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Contributed to the design and implementation of dynamic web applications using JavaScript, TypeScript, and ASP.NET MVC.
+                            Designed and developed dynamic web applications using JavaScript, TypeScript, and ASP.NET MVC. Collaborated on full-stack solutions with emphasis on cross-platform compatibility and user experience optimization across web and email channels.
                         </ParaText>
                     </ExperienceCardContent>
                 </ExperienceCard>
@@ -67,7 +66,7 @@ const WorkExperience = () => {
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Supporting case workflows in data center virtualization environments.
+                            Providing technical support for Cisco Unified Computing System (UCS) technologies as part of the Server Virtualization TAC team. Supporting complex customer environments with UCS B, C, and X series servers, UCS Central, and Intersight. Troubleshooting virtualized infrastructure issues across VMware, Hyper-V, and other hypervisor platforms to resolve customer technical challenges.
                         </ParaText>
                     </ExperienceCardContent> 
                 </ExperienceCard>

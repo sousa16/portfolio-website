@@ -8,7 +8,7 @@ export const theme = {
         para_text_color:'#dcdcdc',
     },
     fonts: {
-        family: 'DM Sans',
+        family: 'Poppins',
         weight: {
             regular: 400,
             medium: 500,

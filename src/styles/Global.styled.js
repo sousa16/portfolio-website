@@ -42,6 +42,8 @@ export const FlexContainer = styled.div`
 export const Heading = styled(PaddingContainer)`
     color: ${({ theme }) => theme.colors.white};
     text-align: ${({ align }) => align};
+    letter-spacing: 0.3px;
+    line-height: 1.3;
     font-size: ${({ size }) => {
         switch(size){
             case 'h1':
@@ -82,7 +84,8 @@ export const GreyText = styled.span`
 
 export const ParaText = styled(PaddingContainer)`
     color: ${({ theme }) => theme.colors.para_text_color};
-    line-height: 2rem;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
 `
 
 export const IconContainer = styled.div`
@@ -103,16 +106,19 @@ export const IconContainer = styled.div`
 export const Button = styled.a`
     display: inline-block;
     width: max-content;
-    padding: 1rem 2rem;
+    padding: 0.875rem 2rem;
     color: ${({ theme }) => theme.colors.white};
-    background-color: ${({ theme }) => theme.colors.primary_light};  
-    border: 1px solid ${({ theme }) => theme.colors.grey};
-    border-radius: 5px;
+    background-color: ${({ theme }) => theme.colors.secondary};  
+    border: 1px solid ${({ theme }) => theme.colors.secondary};
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.3px;
 
     &:hover{
-        color: ${({ theme }) => theme.colors.primary_light};
-        background-color: ${({ theme }) => theme.colors.white}; 
+        color: ${({ theme }) => theme.colors.white};
+        background-color: ${({ theme }) => theme.colors.white};
+        color: ${({ theme }) => theme.colors.primary};
     }
 `

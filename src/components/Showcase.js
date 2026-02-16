@@ -13,14 +13,12 @@ import {
 // import showcase styles
 import {
     ShowcaseImageCard,
+    InitialsBadge,
 } from '../styles/Showcase.styled'
 
 // import react icons
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
-
-// import asset
-import ShowcaseImg from '../assets/showcase-img.png'
 
 
 const Showcase = () => {
@@ -39,27 +37,20 @@ const Showcase = () => {
 
             {/* --left-content-- */}
             <div>
-                <Heading as='h4' size='h4'>Hello!</Heading>
-
                 <Heading
                     as='h2'
                     size='h2'
-                    top='0.5rem'
                     bottom='1rem'
                 >
-                    I'm <GreyText>João Sousa</GreyText>
+                    <GreyText>João Sousa</GreyText>
                 </Heading>
 
                 <Heading as='h3' size='h3'>
-                    I'm a <GreyText>Computer Science Graduate</GreyText>
+                    Network & Infrastructure <GreyText>Engineer</GreyText>
                 </Heading>
 
                 <ParaText as='p' top='2rem' bottom='4rem'>
-                Hello, my name is João Sousa, I've completed my Bachelor's in 
-                Computer Science at Instituto Superior Técnico (2025), and 
-                I'm passionate about cybersecurity and computer networks.
-                <br />
-                Currently, I am working as a Technical Intern at Cisco's Data Center Server Virtualization TAC team.
+                Passionate about building and optimizing infrastructure at scale. Focused on continuous learning in networking, virtualization, and emerging technologies. Currently working on enterprise infrastructure solutions while pursuing industry certifications to deepen technical expertise. Driven to solve complex architectural challenges and contribute to robust, scalable systems.
                 </ParaText>
 
                 {/* --social-icons-- */}
@@ -91,12 +82,10 @@ const Showcase = () => {
 
             {/* --right-content-- */}
             <FlexContainer 
-                
                 justify='flex-end'
             >
                 <ShowcaseImageCard>
-                    <img src={ShowcaseImg}
-                    alt='showcase' />
+                    <InitialsBadge>JS</InitialsBadge>
                 </ShowcaseImageCard>
             </FlexContainer>
 
