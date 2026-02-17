@@ -17,7 +17,7 @@ import {
 } from '../styles/Showcase.styled'
 
 // import react icons
-import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
 
@@ -63,12 +63,6 @@ const Showcase = () => {
                     <a href='https://github.com/sousa16' target='_blank' rel="noreferrer">
                         <IconContainer color='white' size='2rem'>
                             <FaGithub />
-                        </IconContainer>
-                    </a>
-
-                    <a href='https://www.instagram.com/joaosousa16_/' target='_blank' rel="noreferrer">
-                        <IconContainer color='white' size='2rem'>
-                            <FaInstagram />
                         </IconContainer>
                     </a>
 
