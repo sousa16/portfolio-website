@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
     PaddingContainer,
-    FlexContainer,
     Container,
 } from '../styles/Global.styled';
 import {

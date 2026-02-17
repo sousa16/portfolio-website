@@ -14,7 +14,6 @@ import { navLinks } from '../../utils/Data';
 import { 
     MenuIcon,
     NavMenuContainer,
-    MenuItem,
     MenuItemStyled,
 } from '../../styles/Navbar.styled';
 
