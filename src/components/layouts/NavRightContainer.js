@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { NavButton, NavButtonStyled } from '../../styles/Navbar.styled';
+import { NavButtonStyled } from '../../styles/Navbar.styled';
 import { FlexContainer } from '../../styles/Global.styled';
 import { navLinks } from '../../utils/Data';
 

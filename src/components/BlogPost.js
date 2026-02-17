@@ -4,7 +4,6 @@ import {
     PaddingContainer,
     Container,
     Heading,
-    GreyText,
 } from '../styles/Global.styled';
 import {
     BlogPostContainer,

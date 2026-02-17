@@ -21,12 +21,6 @@ import { theme } from '../utils/Theme';
 import NavMenu  from '../components/layouts/NavMenu';
 import NavRightContainer from './layouts/NavRightContainer';
 
-const scrollWithOffset = (el) => {
-  const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-  const yOffset = -100; 
-  window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
-};
-
 const Navbar = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const navigate = useNavigate();
