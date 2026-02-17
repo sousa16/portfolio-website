@@ -61,7 +61,7 @@ const NavMenu = ({ setOpenMenu }) => {
     <NavMenuContainer>
 
         {/* --close-button-- */}
-        <PaddingContainer left='5%' right='5%' top='2rem'>
+        <PaddingContainer left='5%' right='5%' top='1.5rem'>
             <FlexContainer justify='flex-end' responsiveFlex>
                 <MenuIcon 
                     onClick={() => setOpenMenu(false)}
@@ -72,7 +72,7 @@ const NavMenu = ({ setOpenMenu }) => {
         </PaddingContainer>
 
         {/* --menu-items-- */}
-        <PaddingContainer top='8%'>
+        <PaddingContainer top='4rem'>
             <FlexContainer
                 direction='column'
                 align='center'

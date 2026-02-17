@@ -23,7 +23,7 @@ const Project = ({ data }) => {
     <FlexContainer fullWidthChild>
 
         {/* --left-section-project-content-- */}
-        <div style={{ flex: '1 1 100%' }}>
+        <div style={{ flex: '1 1 100%', maxWidth: '100%', overflow: 'hidden' }}>
             <FlexContainer align='center' gap='1rem'>
                 <Heading as='h3' size='h3' bottom='1rem'>
                     {data.project_name}
@@ -39,7 +39,7 @@ const Project = ({ data }) => {
             </FlexContainer>
 
             <PaddingContainer top='1rem'>
-                <FlexContainer gap='1.5rem'>
+                <FlexContainer gap='1.5rem' wrap='wrap'>
                     {data.tech_stack.map((stack) => (
                         <TechStackCard>{stack}</TechStackCard>
                     ))}

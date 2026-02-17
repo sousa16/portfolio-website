@@ -31,7 +31,8 @@ const Blog = () => {
         .filter(post => !selectedTag || (post.tags && post.tags.includes(selectedTag)))
         .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-    const handleReadMore = (postSlug) => {
+    const handleReadMore = (postSlug, e) => {
+        e.stopPropagation();
         navigate(`/blog/${postSlug}`);
     };
 
@@ -66,7 +67,7 @@ const Blog = () => {
 
                     <BlogGrid>
                         {sortedPosts.map((post) => (
-                            <BlogCard key={post.id} onClick={() => handleReadMore(post.slug)}>
+                            <BlogCard key={post.id} onClick={(e) => handleReadMore(post.slug, e)}>
                                 <BlogCardDate>{formatDate(post.date)}</BlogCardDate>
                                 <BlogCardTitle>{post.title}</BlogCardTitle>
                                 <BlogCardExcerpt>{post.excerpt}</BlogCardExcerpt>
@@ -79,7 +80,7 @@ const Blog = () => {
                                     </BlogCardTags>
                                 )}
 
-                                <ReadMoreButton onClick={(e) => e.stopPropagation()}>
+                                <ReadMoreButton onClick={(e) => handleReadMore(post.slug, e)}>
                                     Read More →
                                 </ReadMoreButton>
                             </BlogCard>

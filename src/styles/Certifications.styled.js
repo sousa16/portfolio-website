@@ -14,7 +14,11 @@ export const CertificationCard = styled.div`
         transform: translateY(-5px);
     }
 
-    @media (max-width: 768px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        width: 48%;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width: 100%;
     }
 `;

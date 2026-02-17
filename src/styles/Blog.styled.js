@@ -12,6 +12,11 @@ export const BlogGrid = styled.div`
     gap: 2rem;
     margin-top: 3rem;
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -35,6 +40,10 @@ export const BlogCard = styled.div`
         box-shadow: 0 10px 30px rgba(14, 165, 233, 0.2);
     }
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        padding: 1.75rem;
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         padding: 1.5rem;
     }
@@ -54,6 +63,14 @@ export const BlogCardTitle = styled.h3`
     color: white;
     margin: 0.5rem 0;
     line-height: 1.4;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 1.35rem;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+        font-size: 1.25rem;
+    }
 `;
 
 export const BlogCardExcerpt = styled.p`
@@ -225,12 +242,16 @@ export const SortContainer = styled.div`
     gap: 1rem;
     margin-bottom: 2rem;
     align-items: center;
+    flex-wrap: wrap;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        gap: 0.875rem;
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         gap: 0.75rem;
     }
 `;
-
 export const SortButton = styled.button`
     padding: 0.75rem 1.5rem;
     background: ${({ active }) => active ? 'rgba(14, 165, 233, 0.2)' : 'transparent'};
@@ -246,6 +267,11 @@ export const SortButton = styled.button`
     &:hover {
         border-color: #0ea5e9;
         color: #0ea5e9;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        padding: 0.65rem 1.25rem;
+        font-size: 0.9rem;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {

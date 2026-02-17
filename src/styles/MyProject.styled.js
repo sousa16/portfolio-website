@@ -6,10 +6,18 @@ export const TechStackCard = styled.div`
     color: #fff;
     padding: 0.3rem 1rem;
     border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.95rem;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: 0.85rem;
+        padding: 0.25rem 0.85rem;
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         margin-right: 1rem;
         margin-bottom: 1rem;
+        font-size: 0.8rem;
     }
 `
 
@@ -25,6 +33,11 @@ export const ProjectImage = styled.img`
     height: 300px;
     object-fit: contain;
     border-radius: 10px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        width: ${({ width }) => width === '80%' ? '90%' : width};
+        height: 280px;
+    }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         width: 100%;

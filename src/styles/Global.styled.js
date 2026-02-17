@@ -12,6 +12,13 @@ export const PaddingContainer = styled.div`
     padding-left: ${({ left }) => left};
     padding-right: ${({ right }) => right};
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        padding-top: ${({ tabletTop, responsiveTop }) => tabletTop || responsiveTop};
+        padding-bottom: ${({ tabletBottom, responsiveBottom }) => tabletBottom || responsiveBottom};
+        padding-left: ${({ tabletLeft, responsiveLeft }) => tabletLeft || responsiveLeft};
+        padding-right: ${({ tabletRight, responsiveRight }) => tabletRight || responsiveRight};
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         padding-top: ${({ responsiveTop }) => responsiveTop};
         padding-bottom: ${({ responsiveBottom }) => responsiveBottom};
@@ -31,6 +38,11 @@ export const FlexContainer = styled.div`
 
     & > div {
         flex: ${({ fullWidthChild }) => fullWidthChild && 1};
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        gap: ${({ tabletGap, gap }) => tabletGap || gap};
+        flex-direction: ${({ tabletDirection, direction }) => tabletDirection || direction};
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
@@ -59,6 +71,23 @@ export const Heading = styled(PaddingContainer)`
         }
     }};
 
+    @media(max-width: ${({ theme }) => theme.breakpoints.tablet}) {
+        font-size: ${({ size }) => {
+            switch(size){
+                case 'h1':
+                    return '3.5rem';
+                case 'h2':
+                    return '2.5rem';
+                case 'h3':
+                    return '1.75rem';
+                case 'h4':
+                    return '1.1rem';
+                default:
+                    return;
+            }
+        }}
+    }
+
     @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
         font-size: ${({ size }) => {
             switch(size){
@@ -86,6 +115,9 @@ export const ParaText = styled(PaddingContainer)`
     color: ${({ theme }) => theme.colors.para_text_color};
     line-height: 1.8;
     letter-spacing: 0.2px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 `
 
 export const IconContainer = styled.div`

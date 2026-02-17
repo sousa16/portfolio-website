@@ -45,6 +45,7 @@ const NavRightContainer = () => {
   return (
     <FlexContainer
       gap='3rem'
+      tabletGap='2rem'
       flex-direction='horizontal'
       align='center'
       responsiveFlex
