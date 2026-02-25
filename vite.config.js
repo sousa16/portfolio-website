@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/joaosousadev.pt",
+  base: "/",
   esbuild: {
     jsxFactory: 'React.createElement',
     jsxFragment: 'React.Fragment',
