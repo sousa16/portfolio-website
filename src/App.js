@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './utils/Theme';
 import { Container } from './styles/Global.styled';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 // import components
 import Navbar from './components/Navbar';
@@ -31,7 +31,7 @@ const Portfolio = () => {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ThemeProvider theme={theme}>
         <ParticleBg></ParticleBg>
         <Navbar></Navbar>
@@ -41,6 +41,6 @@ export default function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </ThemeProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
