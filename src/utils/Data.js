@@ -40,13 +40,13 @@ export const projectDetails = [
     {
         id: 1,
         project_name: 'ChessLab',
-        project_desc: `Full-stack chess opening repertoire builder and training platform (deploying soon). Enables players to construct, organize, and practice opening lines using an interactive chess board with spaced repetition learning methodology. Features secure authentication via email verification and Google OAuth, comprehensive repertoire management with branching line support, and progress tracking. Built with modern web technologies for a responsive, performant training experience.`,
+        project_desc: `Chess Opening repertoire builder and training platform. Includes a Tactics training feature. Enables players to construct, organize, and practice opening lines using an interactive chess board with spaced repetition learning methodology. Features secure authentication via email verification and Google OAuth, comprehensive repertoire management with branching line support, and progress tracking. Built with modern web technologies for a responsive, performant training experience.`,
         tech_stack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'NextAuth.js'],
         project_img: null,
         reverse: false,
         project_url: 'https://github.com/sousa16/chesslab',
-        //button_text: 'Visit Repository',
-        //button_url: 'http://www.chesslab.pt'
+        button_text: 'Visit Repository',
+        button_url: 'http://www.chesslab.pt'
     },
     {
         id: 2,

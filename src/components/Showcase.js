@@ -50,7 +50,7 @@ const Showcase = () => {
                 </Heading>
 
                 <ParaText as='p' top='2rem' bottom='4rem'>
-                Passionate about building and optimizing infrastructure at scale. Currently interning at Cisco TAC focused on server virtualization and infrastructure optimization. Dedicated to continuous learning in networking, virtualization, and emerging technologies while pursuing industry certifications. Driven to solve complex architectural challenges and contribute to robust, scalable systems.
+                Passionate about building and optimizing infrastructure at scale. Currently working at Cisco TAC focused on the Data Center AI Compute team. Dedicated to continuous learning in networking, virtualization, and emerging technologies while pursuing industry certifications. Driven to solve complex architectural challenges and contribute to robust, scalable systems.
                 </ParaText>
 
                 {/* --social-icons-- */}

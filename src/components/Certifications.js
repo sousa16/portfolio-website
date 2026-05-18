@@ -34,11 +34,11 @@ const Certifications = () => {
                         <Heading as="h3" size="h3">
                             Cisco Certified Network Professional - Data Center (CCNP DC)
                         </Heading>
-                        <GreyText>In Progress - 1/2 Exams Passed</GreyText>
+                        <GreyText>May 2026</GreyText>
                     </CertificationCardHeader>
                     <CertificationCardContent>
                         <ParaText>
-                            Advanced certification validating expertise in data center design, implementation, and operations. Completed DCCOR (Data Center Core) in February 2026. Currently pursuing DCAI (Data Center AI Infrastructure) to complete the certification.
+                            Advanced certification validating expertise in data center design, implementation, and operations. Completed DCCOR and DCAI to complete the certification.
                         </ParaText>
                     </CertificationCardContent>
                 </CertificationCard>

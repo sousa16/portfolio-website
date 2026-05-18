@@ -32,13 +32,17 @@ const WorkExperience = () => {
                 <ExperienceCard>
                     <ExperienceCardHeader>
                         <Heading as="h3" size="h3">
-                            Technical Intern - TAC DCSV
+                            Technical Consulting Engineer - TAC Data Center AI Compute
                         </Heading>
                         <GreyText>Cisco | Sep 2025 - Present</GreyText>
                     </ExperienceCardHeader>
                     <ExperienceCardContent>
                         <ParaText>
-                            Providing technical support for Cisco Unified Computing System (UCS) technologies as part of the Server Virtualization TAC team. Supporting complex customer environments with UCS B, C, and X series servers, UCS Central, and Intersight. Troubleshooting virtualized infrastructure issues across VMware, Hyper-V, and other hypervisor platforms to resolve customer technical challenges.
+                            Providing technical support for Cisco UCS technologies as part of the Data Center AI Compute TAC team. Supporting complex customer environments with UCS B, C, and X series servers, UCS Central, and Intersight. Troubleshooting virtualized infrastructure issues across VMware, Hyper-V, and other hypervisor platforms to resolve customer technical challenges. Designing and implementing internal software solutions for automation, reporting, and process improvement across TAC operations.
+                        </ParaText>
+                        <br></br>
+                        <ParaText>
+                            Started as an intern and transitioned in April.
                         </ParaText>
                     </ExperienceCardContent> 
                 </ExperienceCard>
