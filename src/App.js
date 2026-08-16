@@ -13,8 +13,6 @@ import Education from './components/Education';
 import Certifications from './components/Certifications';
 import WorkExperience from './components/WorkExperience';
 import MyProjects from './components/MyProjects';
-import Blog from './components/Blog';
-import BlogPost from './components/BlogPost';
 
 const Portfolio = () => {
   return (
@@ -37,8 +35,6 @@ export default function App() {
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Portfolio />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </ThemeProvider>
     </HashRouter>

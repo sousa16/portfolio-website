@@ -45,6 +45,31 @@ const Education = () => {
                     </EducationContent>
                 </EducationCard>
             </FlexContainer>
+
+             <FlexContainer justify="space-evenly" wrap="wrap">
+                <EducationCard>
+                    <EducationHeader>
+                        <Heading as="h3" size="h3">
+                            Msc in Computer Science and Engineering
+                        </Heading>
+                        <GreyText>Instituto Superior Técnico</GreyText>
+                        <GreyText>Lisbon, Portugal</GreyText>
+                    </EducationHeader>
+                    <EducationContent>
+                        <ParaText>
+                            Specialising in Distributed Systems and Cybersecurity. Coursework covers distributed application
+                            development, parallel and distributed computing, cloud computing and virtualisation, and highly
+                            dependable systems, alongside network and systems security, software security, cryptography and
+                            security protocols, and digital forensics.
+                        </ParaText>
+                        <ParaText top="1rem">
+                            Focus on building infrastructure that stays correct and available under both accidental faults and
+                            active attack — from kernel and network-level defences to fault-tolerant, secure distributed
+                            architectures.
+                        </ParaText>
+                    </EducationContent>
+                </EducationCard>
+            </FlexContainer>
         </PaddingContainer>
     );
 };
