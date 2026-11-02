@@ -9,8 +9,8 @@
 :root {
   color-scheme: light dark;
   --bg: #fafaf8;
-  --text: #1c1c1a;
-  --muted: #5c5c56;
+  --text: #111110;
+  --muted: #4d4d47;
   --line: #deded8;
   --accent: #0f6657;
   --sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -20,8 +20,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #111110;
-    --text: #ecece8;
-    --muted: #a6a69e;
+    --text: #f4f4f0;
+    --muted: #c2c2ba;
     --line: #2e2e2b;
     --accent: #62d2bc;
   }
@@ -108,13 +108,13 @@ h1 {
 
 h2 {
   margin-bottom: 2rem;
-  font-size: 1.375rem;
-  font-weight: 600;
+  font-size: 1.75rem;
+  font-weight: 700;
   letter-spacing: -0.01em;
 }
 
 h3 {
-  font-size: 1.0625rem;
+  font-size: 1.1875rem;
   font-weight: 600;
 }
 
@@ -154,7 +154,7 @@ nav .links {
 dt {
   color: var(--muted);
   font-family: var(--mono);
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
 }
 
 .tag {
@@ -229,21 +229,29 @@ dt {
 /* Wide screens: dates and labels move to a left column, keeping text lines readable. */
 @media (min-width: 900px) {
   body {
-    max-width: 1072px;
-    padding: 6rem 16px;
-    font-size: 1.125rem;
+    max-width: 1268px;
+    padding: 6rem 2rem;
+    font-size: 1.1875rem;
   }
 
   h1 {
-    font-size: 3.25rem;
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.625rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
   }
 
   h3 {
-    font-size: inherit;
+    font-size: 1.375rem;
   }
 
   header > p:not(.name, .subtitle) {
-    max-width: 48rem;
+    max-width: 56rem;
   }
 
   .timeline > li,
@@ -251,7 +259,7 @@ dt {
   .plain > li,
   .skills > div {
     display: grid;
-    grid-template-columns: 12rem 1fr;
+    grid-template-columns: 15rem 1fr;
     column-gap: 2.5rem;
   }
 
