@@ -43,12 +43,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 900px) {
-  body {
-    padding-top: 6rem;
-  }
-}
-
 ul,
 ol {
   list-style: none;
@@ -230,4 +224,62 @@ dt {
 
 .skills > div {
   margin-bottom: 1.25rem;
+}
+
+/* Wide screens: dates and labels move to a left column, keeping text lines readable. */
+@media (min-width: 900px) {
+  body {
+    max-width: 1072px;
+    padding: 6rem 16px;
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 3.25rem;
+  }
+
+  h3 {
+    font-size: inherit;
+  }
+
+  header > p:not(.name, .subtitle) {
+    max-width: 48rem;
+  }
+
+  .timeline > li,
+  .rows > li,
+  .plain > li,
+  .skills > div {
+    display: grid;
+    grid-template-columns: 12rem 1fr;
+    column-gap: 2.5rem;
+  }
+
+  .timeline > li > *,
+  .rows > li > *,
+  .plain > li > * {
+    grid-column: 2;
+  }
+
+  .timeline > li > .meta,
+  .plain > li > .meta,
+  .rows > li > h3 {
+    grid-column: 1;
+    grid-row: 1 / span 9;
+  }
+
+  .timeline > li {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .meta,
+  .skills dt {
+    padding-top: 0.2rem;
+  }
+
+  .tag {
+    display: block;
+    margin-left: 0;
+  }
 }
