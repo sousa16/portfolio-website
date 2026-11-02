@@ -33,16 +33,12 @@ const Project = ({ project }) => (
             {project.status && <span className="tag"> {project.status}</span>}
         </h3>
         <p>{project.purpose}</p>
-        <dl>
-            <dt>Role</dt>
-            <dd>{project.role}</dd>
-            {project.result && (
-                <>
-                    <dt>Result</dt>
-                    <dd>{project.result}</dd>
-                </>
-            )}
-        </dl>
+        {project.result && (
+            <dl>
+                <dt>Result</dt>
+                <dd>{project.result}</dd>
+            </dl>
+        )}
         <ul className="stack" aria-label={`${project.name} stack`}>
             {project.stack.map((tech) => <li key={tech}>{tech}</li>)}
         </ul>
