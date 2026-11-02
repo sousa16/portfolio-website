@@ -69,6 +69,7 @@ export const projects = [
     },
     {
         name: 'ChessLab',
+        status: 'Deployed',
         purpose: 'Chess training app for building an opening repertoire and drilling it with spaced repetition, with tactics training on top.',
         stack: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Prisma', 'NextAuth', 'Vercel'],
         // TODO(João): usage numbers if you get them.
@@ -80,7 +81,7 @@ export const projects = [
     },
     {
         name: 'Playkit',
-        status: 'Case study',
+        status: 'Continuous development',
         purpose: 'Progressive web app of minigames for live promotional events, with admin controls for event staff.',
         stack: ['React', 'TypeScript', 'Tailwind CSS', 'Cloudflare Pages', 'Service workers'],
         result: 'Used by thousands of users at tens of live events, and works offline through service workers.',
