@@ -1,25 +1,293 @@
-*{
+@font-face {
+  font-family: 'Inter Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/inter/files/inter-latin-wght-normal.woff2') format('woff2');
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: #fafaf8;
+  --text: #111110;
+  --muted: #4d4d47;
+  --line: #deded8;
+  --accent: #0f6657;
+  --sans: 'Inter Variable', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111110;
+    --text: #f4f4f0;
+    --muted: #c2c2ba;
+    --line: #2e2e2b;
+    --accent: #62d2bc;
+  }
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: DM Sans;
-}
-
-html{
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  max-width: 752px;
+  margin-inline: auto;
+  padding: 4rem 16px;
+  background: var(--bg);
+  color: var(--text);
+  font: 1.0625rem/1.6 var(--sans);
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Inline in a sentence, so it needs more than color to read as a link. */
+.skills a {
+  text-decoration: underline;
+}
+
+nav a {
+  color: var(--muted);
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip {
+  position: absolute;
+  left: 16px;
+  top: -4rem;
+}
+
+.skip:focus {
+  top: 1rem;
+}
+
+.name,
+.org {
+  font-weight: 500;
+}
+
+h1 {
+  margin-top: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin-bottom: 1.5rem;
+  color: var(--muted);
+  font-size: 1.25rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.1875rem;
+  font-weight: 600;
+}
+
+section {
+  margin-top: 5rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+
+/* Comfortable touch targets, including when links wrap at phone width. */
+.links a {
+  display: inline-block;
+  padding: 0.25rem 0;
+}
+
+header .links {
+  margin-top: 1.5rem;
+}
+
+nav {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--line);
+}
+
+nav .links {
+  margin-top: 0;
+}
+
+.meta,
+.tag,
+.stack,
+dt {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.9375rem;
+}
+
+.tag {
+  margin-left: 0.5rem;
+  font-weight: 400;
+}
+
+.timeline > li,
+.rows > li,
+.plain > li {
+  margin-bottom: 2.5rem;
+}
+
+.timeline > li {
+  padding-left: 1.25rem;
+  border-left: 1px solid var(--line);
+}
+
+.org {
+  color: var(--muted);
+}
+
+.note {
+  margin-top: 0.5rem;
+  color: var(--muted);
+}
+
+.bullets {
+  margin-top: 0.5rem;
+}
+
+.bullets li {
+  margin-top: 0.5rem;
+}
+
+.rows > li {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.rows > li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.rows dl {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 0.25rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.rows dt {
+  line-height: 1.95;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  margin-top: 0.75rem;
+}
+
+.rows .links {
+  margin-top: 0.5rem;
+}
+
+.skills > div {
+  margin-bottom: 1.25rem;
+}
+
+/* Wide screens: dates and labels move to a left column, keeping text lines readable. */
+@media (min-width: 900px) {
+  body {
+    max-width: 1268px;
+    padding: 6rem 2rem;
+    font-size: 1.1875rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.625rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  header > p:not(.name, .subtitle) {
+    max-width: 56rem;
+  }
+
+  .timeline > li,
+  .rows > li,
+  .plain > li,
+  .skills > div {
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    column-gap: 2.5rem;
+  }
+
+  .timeline > li > *,
+  .rows > li > *,
+  .plain > li > * {
+    grid-column: 2;
+  }
+
+  .timeline > li > .meta,
+  .plain > li > .meta,
+  .rows > li > h3 {
+    grid-column: 1;
+    grid-row: 1 / span 9;
+  }
+
+  .timeline > li {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .meta,
+  .skills dt {
+    padding-top: 0.2rem;
+  }
+
+  .tag {
+    display: block;
+    margin-left: 0;
+  }
 }

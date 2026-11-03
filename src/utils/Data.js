@@ -1,103 +1,122 @@
-import React from 'react';
-import { FaPython } from 'react-icons/fa';
-import { IoFlagSharp } from "react-icons/io5";
-import { MdCloud } from "react-icons/md";
-import { MdSmartToy } from "react-icons/md";
+// All site content. Blank optional fields don't render, so a TODO(João) here never reaches the page.
 
-export const Skills = [
-    {
-        id: 0, 
-        tech: 'Network & Data Center Engineering',
-        icon: <MdCloud />
-    },
-    {
-        id: 1, 
-        tech: 'Python Scripting & Automation',
-        icon: <FaPython />
-    },
-    {
-        id: 2, 
-        tech: 'Cybersecurity & CTF',
-        icon: <IoFlagSharp />
-    }, 
-    {
-        id: 3, 
-        tech: 'AI Infrastructure & Tools',
-        icon: <MdSmartToy />
-    },
-];
+export const profile = {
+    name: 'João Sousa',
+    headline: 'Software Engineer',
+    subtitle: 'Backend and distributed systems',
+    intro: `I work on production incidents at Cisco TAC, on the Data Center AI Compute team. I've built full-stack applications running in production. I'm doing an MSc at Instituto Superior Técnico, specializing in distributed systems and cybersecurity.`,
+};
 
-export const projectDetails = [
-    {
-        id: 0,
-        project_name: 'XDP/eBPF DDoS Mitigator (Ongoing)',
-        project_desc: `Ongoing project building a kernel-bypass packet filtering and DDoS mitigation system. An XDP/eBPF data plane drops malicious traffic at the NIC driver level, before packets ever reach the Linux networking stack, while a Go control plane manages the BPF maps at runtime and reconciles state across network namespaces and attached programs, auto-detecting and repairing configuration drift. Built from the verifier up, with planned modules for BGP-based anycast routing with BFD failover and kernel-level observability exported to Prometheus and Grafana.`,
-        tech_stack: ['eBPF', 'XDP', 'Go', 'C', 'Linux Kernel', 'Netlink', 'BGP', 'Prometheus'],
-        project_img: null,
-        project_url: 'https://github.com/sousa16/xdp-ebpf-mitigator',
-        reverse: false,
-    },
-    {
-        id: 1,
-        project_name: 'CTF Write-ups & Web Security Labs',
-        project_desc: `Comprehensive collection of write-ups for Capture The Flag (CTF) challenges and PortSwigger Web Security Academy labs. Primarily focused on web exploitation techniques with detailed explanations of methodology, tools, payloads, and thought processes. Includes solutions from multiple CTF events (LIT CTF, CRHC CTF, Script25, and more) plus extensive PortSwigger lab documentation covering web vulnerabilities from fundamentals to advanced attack vectors.`,
-        tech_stack: ['Web Exploitation', 'Python', 'JavaScript', 'OWASP', 'Security Research'],
-        project_img: null,
-        project_url: 'https://github.com/sousa16/ctf-writeups',
-        reverse: false,
-    },
-    {
-        id: 2,
-        project_name: 'ChessLab',
-        project_desc: `Chess Opening repertoire builder and training platform. Includes a Tactics training feature. Enables players to construct, organize, and practice opening lines using an interactive chess board with spaced repetition learning methodology. Features secure authentication via email verification and Google OAuth, comprehensive repertoire management with branching line support, and progress tracking. Built with modern web technologies for a responsive, performant training experience.`,
-        tech_stack: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'PostgreSQL', 'Prisma', 'NextAuth.js'],
-        project_img: null,
-        reverse: false,
-        project_url: 'https://github.com/sousa16/chesslab',
-        button_text: 'Visit Repository',
-        button_url: 'http://www.chesslab.pt'
-    },
-    {
-        id: 3,
-        project_name: 'Interactive Minigames Platform',
-        project_desc: `Progressive Web App designed for large-scale promotional events featuring multiple interactive minigames. Includes comprehensive administrative dashboard for real-time event management, prize inventory tracking, and player engagement analytics. Built for high-traffic retail scenarios with responsive mobile-first interface, robust state management, and intuitive controls for event staff. Deployed in premium enterprise environments with proven scalability and reliability.`,
-        tech_stack: ['React', 'TypeScript', 'Tailwind CSS', 'Cloudflare Pages', 'PWA'],
-        project_img: null,
-        reverse: false,
-        button_text: 'Visit Web App',
-        button_url: 'https://plinko-2ha.pages.dev/'
-    },
+export const contactLinks = [
+    { name: 'Download CV', url: '/Joao-Sousa-CV.pdf', download: true },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/joao-p-c-sousa/' },
+    { name: 'GitHub', url: 'https://github.com/sousa16' },
+    { name: 'Email', url: 'mailto:jpcsousa@outlook.pt' },
 ];
 
 export const navLinks = [
+    { name: 'Experience', to: 'experience' },
+    { name: 'Projects', to: 'projects' },
+    { name: 'Skills', to: 'skills' },
+    { name: 'Certifications', to: 'certifications' },
+    { name: 'Education', to: 'education' },
+];
+
+export const experience = [
     {
-        id: 0,
-        name: 'Work Experience',
-        to: 'experience'
+        role: 'Technical Consulting Engineer, TAC Data Center AI Compute',
+        company: 'Cisco',
+        dates: 'Sep 2025 – Present',
+        note: 'Promoted from TAC intern in April 2026.',
+        // TODO(João): case volume or severity, and the internal tools' usage or time saved, if shareable.
+        bullets: [
+            'Resolve critical production incidents for enterprise customers across UCS hardware, fabric interconnects and data center switching.',
+            'Root-cause performance bottlenecks across compute, ESXi clusters and cloud-managed server virtualization using logs, captures and telemetry.',
+            'Built an event-driven defect audit in Python leveraging Generative AI that produces a scored compliance summary against quality guidelines, sends key findings to the submitter over Webex and publishes a detailed report.',
+            'Built internal lookup tools for defect reviews and RMA status: lightweight web frontends on Python backends that call internal APIs in parallel, cache in MongoDB and use an LLM to produce reviewable reports.',
+        ],
     },
-
     {
-        id: 1,
-        name: 'My Projects',
-        to: 'projects' 
+        role: 'Digital Business Engineer',
+        company: 't_insight',
+        dates: 'Sep 2024 – Feb 2025',
+        // TODO(João): a concrete result, and the client's name if you confirm it can be shared.
+        bullets: [
+            'Built and fixed high-traffic, responsive web platforms using TypeScript and ASP.NET MVC.',
+        ],
     },
-
     {
-        id: 2,
-        name: 'My Skills',
-        to: 'skills' 
+        role: 'QA Automation Engineer',
+        company: 'Sky Portugal',
+        dates: 'Jul 2024 – Aug 2024',
+        note: 'Summer internship.',
+        bullets: [
+            'Built a prototype RAG Slack bot in Python with Azure OpenAI that classifies Jira bug tickets and routes them to the right team.',
+        ],
     },
+];
 
+export const projects = [
     {
-        id: 3,
-        name: 'Certifications',
-        to: 'certifications'
+        name: 'raft-kv',
+        status: 'In progress',
+        purpose: 'Replicated key-value store in Go on the Raft consensus algorithm.',
+        // TODO(João): the rest of the stack once decided.
+        stack: ['Go'],
+        // TODO(João): first concrete result once something runs.
+        result: null,
+        links: [{ name: 'Code', url: 'https://github.com/sousa16/raft-kv' }],
     },
-
     {
-        id: 4,
-        name: 'Education',
-        to: 'education'
-    }
+        name: 'ChessLab',
+        status: 'Deployed',
+        purpose: 'Chess training app for building an opening repertoire and drilling it with spaced repetition, with tactics training on top.',
+        stack: ['Next.js', 'React', 'TypeScript', 'PostgreSQL', 'Prisma', 'NextAuth', 'Vercel'],
+        // TODO(João): usage numbers if you get them.
+        result: 'Running in production, with email and Google sign-in and a pool of 10k+ Lichess puzzles.',
+        links: [
+            { name: 'Live app', url: 'https://chesslab.pt' },
+            { name: 'Code', url: 'https://github.com/sousa16/chesslab' },
+        ],
+    },
+    {
+        name: 'Playkit',
+        status: 'Continuous development',
+        purpose: 'Progressive web app of minigames for live promotional events, with admin controls for event staff.',
+        stack: ['React', 'TypeScript', 'Tailwind CSS', 'Cloudflare Pages', 'Service workers'],
+        result: 'Used by thousands of users at tens of live events, and works offline through service workers.',
+        links: [],
+    },
+];
 
-]
+export const skills = [
+    { group: 'Languages', items: 'Go, Python, TypeScript, C, SQL' },
+    { group: 'Backend & tools', items: 'PostgreSQL, Docker, gRPC, Linux, Git, Next.js, React' },
+    { group: 'Networking & data center', items: 'BGP, OSPF, EVPN, VXLAN, Cisco UCS, ESXi' },
+    {
+        group: 'Security',
+        items: 'Web exploitation, CTF',
+        link: { name: 'write-ups', url: 'https://github.com/sousa16/ctf-writeups' },
+    },
+];
+
+export const certifications = [
+    { name: 'Cisco Certified Network Professional Data Center (CCNP Data Center)', date: 'May 2026' },
+    { name: 'Cisco AI Technical Practitioner (AITECH)', date: 'Feb 2026' },
+    { name: 'Cisco Certified Network Associate Automation (CCNA Automation)', date: 'Nov 2025' },
+    { name: 'Cisco Certified Network Associate (CCNA)', date: 'Nov 2025' },
+];
+
+export const education = [
+    {
+        degree: 'MSc in Computer Science and Engineering',
+        detail: 'Specializing in distributed systems and cybersecurity.',
+        school: 'Instituto Superior Técnico',
+        dates: 'Sep 2026 – Present',
+    },
+    {
+        degree: 'BSc in Computer Science and Engineering',
+        school: 'Instituto Superior Técnico',
+        dates: '2021 – 2025',
+    },
+];

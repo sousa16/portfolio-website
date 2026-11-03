@@ -1,30 +1,19 @@
-# João Sousa's Portfolio
+# João Sousa's site
 
-Personal portfolio website showcasing work experience, projects, skills, certifications, and education.
+Source of [joaosousadev.pt](https://joaosousadev.pt): a single static page with experience, projects, skills, certifications and education.
 
-## Tech Stack
+React renders the page to HTML at build time (see `vite.config.js`). No JavaScript is shipped to the browser. Content lives in `src/utils/Data.js`.
 
-- **Frontend Framework**: React 18
-- **Routing**: React Router v6 (Hybrid SPA with hash-based portfolio sections + standard routes for blog)
-- **Styling**: Styled Components with theme support
-- **Icons**: React Icons
-- **Build Tool**: Vite
-- **Deployment**: GitHub Pages
+## Commands
 
-## Features
+```sh
+npm ci
+npm run dev      # local server
+npm run lint
+npm run build    # outputs dist/
+npm test         # checks dist/, so build first
+```
 
-- Dynamic portfolio sections (Work Experience, Projects, Skills, Certifications, Education)
-- Blog with tag-based filtering and slug-based routing
-- Responsive design with mobile support
-- Smooth scroll navigation between sections
-- Dark theme with professional styling
+## Deployment
 
-## Sections
-
-1. **Work Experience** - Current and past roles with detailed descriptions
-2. **My Projects** - Featured projects with technology stacks and links
-3. **My Skills** - Core technical competencies
-4. **Certifications** - Cisco and professional certifications
-5. **Education** - Academic background
-6. **Blog** - Technical blog posts and writeups
-
+`.github/workflows/deploy.yml` runs lint, build and test on every pull request and on `master`. Pushes to `master` then deploy `dist/` to GitHub Pages.
